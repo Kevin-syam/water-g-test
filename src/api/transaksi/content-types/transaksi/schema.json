@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaksis",
+  "info": {
+    "singularName": "transaksi",
+    "pluralName": "transaksis",
+    "displayName": "Transaksi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "waktu_transaksi": {
+      "type": "datetime",
+      "required": true
+    },
+    "keterangan": {
+      "type": "text"
+    },
+    "total": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

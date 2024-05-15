@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "water_guardian_tests",
+  "info": {
+    "singularName": "water-guardian-test",
+    "pluralName": "water-guardian-tests",
+    "displayName": "Water Guardian Test"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "barangs",
+  "info": {
+    "singularName": "barang",
+    "pluralName": "barangs",
+    "displayName": "Barang",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kode_barang": {
+      "type": "string",
+      "maxLength": 6,
+      "required": true,
+      "unique": true
+    },
+    "nama_barang": {
+      "type": "string",
+      "required": true
+    },
+    "harga": {
+      "type": "biginteger",
+      "required": true,
+      "min": "10"
+    },
+    "stok": {
+      "type": "integer",
+      "required": true
+    },
+    "suppliers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::supplier.supplier"
+    }
+  }
+}
